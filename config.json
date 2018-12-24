@@ -9,6 +9,7 @@
     "path": "./database.sqlite"
   },
   "db": {
+    "logging": false,
     "operatorsAliases": false,
     "pool": {
       "max": 5,
@@ -16,5 +17,13 @@
       "acquire": 30000,
       "idle": 10000
     }
+  },
+  "server": {
+    "port": 8080
+  },
+  "password": {
+    "type": "Password",
+    "message": "Enter your password please",
+    "name": "password"
   }
 }
