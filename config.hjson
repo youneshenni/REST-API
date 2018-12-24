@@ -1,0 +1,17 @@
+{
+  database:
+  {
+    username: younes
+    password: younes
+    host: localhost
+    port: 5432
+    db_name: younes
+    dialect: postgres
+    path: ./database.sqlite
+  }
+  db:
+  {
+    operatorsAliases: false
+    pool: {max: 5, min: 0, acquire: 30000, idle: 10000}
+  }
+}
