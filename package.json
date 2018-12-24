@@ -14,5 +14,9 @@
     "JWT"
   ],
   "author": "Younes Henni",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sequelize": "^4.42.0"
+  }
 }
