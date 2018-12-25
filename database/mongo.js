@@ -64,6 +64,7 @@ exports.put = function(connection, req) {
         });
   });
 };
+
 exports.delete = function(connection, req) {
   const Model = require(`../models/mongodb/${req.params.model}.js`);
   return new Promise(function(resolve, reject) {

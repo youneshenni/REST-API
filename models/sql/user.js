@@ -7,6 +7,7 @@ module.exports = function(sequelize, Sequelize) {
       type: Sequelize.STRING,
     },
   });
+
   User.sync({
     force: false,
   });

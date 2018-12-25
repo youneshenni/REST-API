@@ -6,8 +6,11 @@ module.exports = function(database) {
   const config = require('./config.json');
   const getType = require('./functions.js').getType;
   const db = require(`./database/${getType(config)}`);
+
   app.use(cors());
+
   app.use(express.json());
+
   // Gets the models list
   app.get('/', function(req, res) {
     fs.readdir(`models/${getType(config)}`, (err, files) => {
@@ -24,16 +27,19 @@ module.exports = function(database) {
       res.send(res.body);
     });
   });
+
   app.get('/:model/', function(req, res) {
     db.get(database, req)
         .then((status) => res.send(status))
         .catch((status) => res.sendStatus(status));
   });
+
   app.post('/:model/', function(req, res) {
     db.post(database, req)
         .then((status) => res.sendStatus(status))
         .catch((status) => res.sendStatus(status));
   });
+
   app.put('/:model/:id', function(req, res) {
     db.put(database, req)
         .then((model) => {
@@ -44,6 +50,7 @@ module.exports = function(database) {
         })
         .catch((status) => res.sendStatus(status));
   });
+
   app.delete('/:model/:id', function(req, res) {
     db.delete(database, req)
         .then((count) => {

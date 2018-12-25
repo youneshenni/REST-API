@@ -11,6 +11,7 @@ exports.init = function connect(config, callback) {
   const prompt = new Prompt(config.password);
   const database = config.database;
   const db = config.db;
+
   db.dialect = database.dialect;
   db.host = database.host;
   if (database.dialect == 'sqlite') db.storage = database.path;
@@ -33,6 +34,7 @@ exports.init = function connect(config, callback) {
         });
       });
 };
+
 exports.get = function(sequelize, req) {
   return new Promise(function(resolve, reject) {
     const Model = require(
@@ -44,6 +46,7 @@ exports.get = function(sequelize, req) {
     }).catch((err) => reject(404));
   });
 };
+
 exports.post = function(sequelize, req) {
   return new Promise(function(resolve, reject) {
     const Model = require(
@@ -60,6 +63,7 @@ exports.post = function(sequelize, req) {
     });
   });
 };
+
 exports.put = function(sequelize, req) {
   return new Promise(function(resolve, reject) {
     const Model = require(
@@ -76,6 +80,7 @@ exports.put = function(sequelize, req) {
         .catch((err) => reject(404));
   });
 };
+
 exports.delete = function(sequelize, req) {
   return new Promise(function(resolve, reject) {
     const Model = require(
