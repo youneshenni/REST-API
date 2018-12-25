@@ -6,11 +6,11 @@
 {
   database: /*Your database connection's settings, you MUST modify them*/
   {
-    username: "younes" /*Your database account's username */ 
-    host: "localhost" /*The host for your database */
-    port: 5432 /* Your database's port number */
-    db_name: "younes" /* Your database's name */
-    dialect: "postgres" /* The type of database you're using */
+    username: "younabobo" /*Your database account's username */ 
+    host: "ds055742.mlab.com" /*The host for your database */
+    port: 55742 /* Your database's port number 5432 for PostgreSQL and 27017 for MongoDB*/
+    db_name: "api" /* Your database's name */
+    dialect: "mongo" /* The type of database you're using */
     path: "./database.sqlite" /*Path to the database file if you're using sqlite */
   }
   db: //Configuration settings for sequelize, DO NOT MODIFY

@@ -1,10 +1,10 @@
 {
   "database": {
-    "username": "younes",
-    "host": "localhost",
-    "port": 5432,
-    "db_name": "younes",
-    "dialect": "postgres",
+    "username": "younabobo",
+    "host": "ds055742.mlab.com",
+    "port": 55742,
+    "db_name": "api",
+    "dialect": "mongo",
     "path": "./database.sqlite"
   },
   "db": {
@@ -22,7 +22,7 @@
   },
   "password": {
     "type": "Password",
-    "message": "Enter your password please",
+    "message": "Enter your password please:",
     "name": "password"
   }
 }

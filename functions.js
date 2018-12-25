@@ -6,5 +6,5 @@ exports.getType = function(config) {
     'mysql',
   ].includes(config.database.dialect)) {
     return 'sql';
-  }
+  } else return config.database.dialect;
 };
