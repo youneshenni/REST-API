@@ -1,0 +1,34 @@
+/*This file is a documented copy of the config.json
+* Please execute "npm run-script conv" after each edit
+* You may modify the config.json directly but I do recommend
+* that you edit this file instead as it is documented
+*/
+{
+  database: /*Your database connection's settings, you MUST modify them*/
+  {
+    username: "younes" /*Your database account's username */ 
+    host: "localhost" /*The host for your database */
+    port: 5432 /* Your database's port number */
+    db_name: "younes" /* Your database's name */
+    dialect: "postgres" /* The type of database you're using */
+    path: "./database.sqlite" /*Path to the database file if you're using sqlite */
+  }
+  db: //Configuration settings for sequelize, DO NOT MODIFY
+  {
+    logging: false
+    operatorsAliases: false
+    pool: {max: 5, min: 0, acquire: 30000, idle: 10000}
+  }
+    //port for your web server
+  server:
+  {
+    port: 8080
+    }
+    //Configuration for the password prompt
+  password: 
+  {
+    type: Password
+    message: "Enter your password please:" //Message displayed on password prompt
+    name: password
+  }
+}
