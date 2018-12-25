@@ -44,7 +44,7 @@ This API is still under development.
 ### Checklist
 
 - [x] SQL Databases
-- [ ] MongoDB Database
+- [x] MongoDB Database
 - [ ] Google Firebase
 - [x] Database switching through configuration files
 - [x] CRUD Support
