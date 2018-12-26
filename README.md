@@ -45,7 +45,6 @@ This API is still under development.
 
 - [x] SQL Databases
 - [x] MongoDB Database
-- [ ] Google Firebase
 - [x] Database switching through configuration files
 - [x] CRUD Support
-- [ ] JWT Authentication
+- [x] JWT Authentication

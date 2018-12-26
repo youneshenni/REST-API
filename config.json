@@ -5,7 +5,9 @@
     "port": 55742,
     "db_name": "api",
     "dialect": "mongo",
-    "path": "./database.sqlite"
+    "path": "./database.sqlite",
+    "pass_name": "password",
+    "auth_method": "email"
   },
   "db": {
     "logging": false,
@@ -23,6 +25,12 @@
   "password": {
     "type": "Password",
     "message": "Enter your password please:",
-    "name": "password"
+    "name": "password",
+    "hash_len": 10,
+    "random_len": 10
+  },
+  "JWT": {
+    "secret": "secret",
+    "expiresIn": "15m"
   }
 }

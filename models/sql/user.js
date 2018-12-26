@@ -6,6 +6,12 @@ module.exports = function(sequelize, Sequelize) {
     lastName: {
       type: Sequelize.STRING,
     },
+    password: {
+      type: Sequelize.STRING,
+    },
+    email: {
+      type: Sequelize.STRING,
+    },
   });
 
   User.sync({
