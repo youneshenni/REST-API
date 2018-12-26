@@ -113,8 +113,9 @@ exports.delete = function(connection, req) {
   const Model = require(`../models/mongodb/${req.params.model}.js`);
   return new Promise(function(resolve, reject) {
     Model.findByIdAndDelete(req.params.id)
-        .then(function() {
-          resolve(1);
+        .then(function(doc) {
+          if (isEmpty(doc)) resolve(0);
+          else resolve(1);
         })
         .catch(function() {
           reject(404);

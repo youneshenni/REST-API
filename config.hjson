@@ -6,11 +6,11 @@
 {
   database: /*Your database connection's settings, you MUST modify them*/
   {
-    username: "younabobo" /*Your database account's username */ 
-    host: "ds055742.mlab.com" /*The host for your database */
-    port: 55742 /* Your database's port number 5432 for PostgreSQL and 27017 for MongoDB*/
-    db_name: "api" /* Your database's name */
-    dialect: "mongo" /* The type of database you're using */
+    username: "username" /*Your database account's username */ 
+    host: "hostname" /*The host for your database */
+    port: "port" /* Your database's port number 5432 for PostgreSQL and 27017 for MongoDB*/
+    db_name: "database_name" /* Your database's name */
+    dialect: "mongo" /* The type of database you're using, supported databases: mongo, postgres, mysql, mssql, sqlite*/
     path: "./database.sqlite" /* Path to the database file if you're using sqlite */
     pass_name: "password" // The column/key name for your password
     auth_method: "email" // Login credential (Email, password, etc..)
@@ -24,7 +24,7 @@
     //port for your web server
   server:
   {
-    port: 8080
+    port: 8080 //Port that will be used by the API server
     }
     //Configuration for the password prompt
   password: 
