@@ -4,7 +4,8 @@
   "description": "RESTful API for interaction with MongoDB and PostgreSQL",
   "main": "main.js",
   "scripts": {
-    "conv": "hjson -j config.hjson > config.json"
+    "conv": "node hjson.js",
+    "test": "node node_modules/mocha/bin/mocha"
   },
   "keywords": [
     "API",
@@ -24,7 +25,6 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-jwt-middleware": "^1.0.3",
-    "hjson": "^3.1.2",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.0",
     "pg": "^7.7.1",
@@ -35,6 +35,8 @@
     "chai": "^4.2.0",
     "eslint": "^5.11.0",
     "eslint-config-google": "^0.11.0",
-    "grunt": "^1.0.3"
+    "grunt": "^1.0.3",
+    "hjson": "^3.1.2",
+    "mocha": "^5.2.0"
   }
 }
